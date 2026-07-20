@@ -1,0 +1,147 @@
+.projects{
+
+    padding:120px 8%;
+
+}
+
+.project-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:50px;
+
+    margin-top:70px;
+
+}
+
+.project-card{
+
+    display:flex;
+
+    background:#111827;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#8B5CF6;
+
+    box-shadow:0 20px 40px rgba(139,92,246,.2);
+
+}
+
+.project-image{
+
+    width:45%;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.project-content{
+
+    width:55%;
+
+    padding:35px;
+
+}
+
+.featured-tag{
+
+    color:#FBBF24;
+
+    font-weight:600;
+
+}
+
+.project-content h3{
+
+    font-size:30px;
+
+    margin:15px 0;
+
+}
+
+.project-content p{
+
+    color:#A1A1AA;
+
+    line-height:1.8;
+
+}
+
+.tech-stack{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin:25px 0;
+
+}
+
+.tech-stack span{
+
+    background:#8B5CF6;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+}
+
+.project-content ul{
+
+    margin-left:20px;
+
+    color:#D1D5DB;
+
+    line-height:2;
+
+}
+
+.project-buttons{
+
+    margin-top:30px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.project-buttons a{
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    background:#8B5CF6;
+
+    color:white;
+
+}

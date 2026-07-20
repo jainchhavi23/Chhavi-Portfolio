@@ -1,0 +1,99 @@
+.experience{
+
+    padding:120px 8%;
+
+    min-height:100vh;
+
+}
+
+.experience-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.experience-card{
+
+    background:#111827;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#8B5CF6;
+
+    box-shadow:0 20px 40px rgba(139,92,246,.2);
+
+}
+
+.experience-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#8B5CF6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+.experience-card h3{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+.experience-card h4{
+
+    color:#E5E7EB;
+
+    margin-bottom:8px;
+
+}
+
+.experience-card span{
+
+    color:#8B5CF6;
+
+    font-size:15px;
+
+}
+
+.experience-card p{
+
+    margin-top:20px;
+
+    color:#A1A1AA;
+
+    line-height:1.8;
+
+}
