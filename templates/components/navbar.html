@@ -22,8 +22,12 @@
 
     </ul>
 
-    <a href="#" class="resume-btn">
-        Resume
-    </a>
+    <a href="{{ url_for('static', filename='images/Resume.pdf') }}"
+   class="btn btn-outline"
+   download>
+
+    <i class="fa-solid fa-download"></i>
+     Resume
+</a>
 
 </nav>

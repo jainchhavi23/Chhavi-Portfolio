@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/skills.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+<link` rel="stylesheet" href="{{ url_for('static', filename='css/achievements.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
@@ -28,7 +29,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,6 +41,19 @@
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 <script src="{{ url_for('static', filename='js/typing.js') }}"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:900,
+
+once:true,
+
+});
+
+</script>
 </body>
 
 </html>

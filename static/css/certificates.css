@@ -1,55 +1,175 @@
-.certificates{
+/*==========================
+     ACHIEVEMENTS
+==========================*/
 
-    padding:100px 8%;
+.achievements{
 
-    min-height:100vh;
+    padding:110px 8%;
+    background:#0b0b0f;
 
 }
 
-.certificate-grid{
+.section-heading{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.section-heading span{
+
+    color:#8B5CF6;
+    font-size:15px;
+    letter-spacing:4px;
+    font-weight:600;
+
+}
+
+.section-heading h2{
+
+    color:#fff;
+    font-size:50px;
+    margin-top:12px;
+
+}
+
+/*==========================
+      GRID
+==========================*/
+
+.achievement-grid{
 
     display:grid;
-
     grid-template-columns:repeat(2,1fr);
-
-    gap:30px;
+    gap:35px;
 
 }
 
-.certificate-card{
+/*==========================
+      CARD
+==========================*/
 
-    background:#111827;
+.achievement-card{
+
+    background:#151925;
 
     border:1px solid rgba(255,255,255,.08);
 
-    border-radius:15px;
+    border-radius:22px;
 
-    padding:30px;
+    padding:35px;
 
-    transition:.3s;
+    transition:.35s;
 
 }
 
-.certificate-card:hover{
+.achievement-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
     border-color:#8B5CF6;
 
-    box-shadow:0 10px 30px rgba(139,92,246,.2);
+    box-shadow:0 15px 45px rgba(139,92,246,.25);
 
 }
 
-.certificate-card h3{
+.card-icon{
 
-    margin-bottom:15px;
+    width:65px;
+    height:65px;
+
+    background:#8B5CF6;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    margin-bottom:25px;
 
 }
 
-.certificate-card p{
+.achievement-card h3{
 
-    color:#94A3B8;
+    color:white;
 
-    line-height:1.7;
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.achievement-card h4{
+
+    color:#8B5CF6;
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+}
+
+.achievement-card p{
+
+    color:#B5B8C5;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/*==========================
+   BUTTON
+==========================*/
+
+.certificate-btn{
+
+    display:inline-block;
+
+    margin-top:22px;
+
+    padding:12px 24px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    color:white;
+
+    border:2px solid #8B5CF6;
+
+    transition:.35s;
+
+}
+
+.certificate-btn:hover{
+
+    background:#8B5CF6;
+
+}
+
+/*==========================
+    RESPONSIVE
+==========================*/
+
+@media(max-width:900px){
+
+    .achievement-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-heading h2{
+
+        font-size:38px;
+
+    }
 
 }

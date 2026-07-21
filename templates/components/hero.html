@@ -2,70 +2,80 @@
 
     <div class="hero-left">
 
-        <p class="hello">Hello, I'm</p>
+        <p class="hero-tag">👋 Hi, I'm</p>
 
-        <h1>Chhavi Jain</h1>
+        <h1>
+            Chhavi <span>Jain</span>
+        </h1>
 
         <h2>
-            <span id="typing"></span>
+            Python Developer
+            <span>|</span>
+            Flask Developer
+            <span>|</span>
+            AI Enthusiast
         </h2>
 
-        <p class="hero-text">
-
-            I build practical software solutions using Python, Flask and Data Analytics.
-            Passionate about creating efficient applications and continuously learning
-            modern technologies.
-
+        <p class="hero-description">
+            I build modern web applications and practical software solutions
+            using Python, Flask and Data Analytics.
+            Passionate about solving real-world problems through clean code
+            and continuous learning.
         </p>
 
         <div class="hero-buttons">
 
-            <a href="#projects" class="btn-primary">
-                View Projects
+            <a href="#projects" class="btn btn-primary">
+                🚀 View Projects
             </a>
 
-            <a href="#" class="btn-secondary">
-                Download Resume
+            <a href="/static/images/Resume.pdf"
+               class="btn btn-outline"
+               target="_blank">
+                📄 Resume
             </a>
 
         </div>
-
-    </div>
+        </div>
 
     <div class="hero-right">
 
-        <div class="terminal">
+        <div class="profile-circle">
 
-            <div class="terminal-header">
+            <img src="{{ url_for('static', filename='images/profile.jpeg') }}"
+                 alt="Chhavi Jain">
 
-                <span class="red"></span>
-                <span class="yellow"></span>
-                <span class="green"></span>
+        </div>
 
-            </div>
+        <div class="glass-card card1">
 
-            <div class="terminal-body">
+            <h3>8+</h3>
 
-<pre>
-> python portfolio.py
+            <p>Projects</p>
 
-Loading Skills...
+        </div>
 
-✔ Python
+        <div class="glass-card card2">
 
-✔ Flask
+            <h3>8.5</h3>
 
-✔ SQL
+            <p>CGPA</p>
 
-✔ Power BI
+        </div>
 
-✔ Git & GitHub
+        <div class="glass-card card3">
 
-Status:
-Available for Opportunities
-</pre>
+            <h3>Python</h3>
 
-            </div>
+            <p>Flask • SQL</p>
+
+        </div>
+
+        <div class="glass-card card4">
+
+            <h3>Open</h3>
+
+            <p>Internships</p>
 
         </div>
 
