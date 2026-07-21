@@ -25,6 +25,9 @@ A modern personal portfolio built with Flask to showcase my education, experienc
 
 ```
 chhavi-portfolio/
+static/
+templates/
+
 ```
 
 ## Author
