@@ -6,7 +6,7 @@ A modern and responsive personal portfolio built with **Python**, **Flask**, **H
 
 ## 🚀 Live Demo
 
-🔗 https://chhavi-portfolio.onrender.com
+🔗 https://chhavi-portfolio-2.onrender.com
 
 ---
 
