@@ -1,73 +1,170 @@
 .projects{
-    padding:100px 8%;
+    padding:30px 8%;
+    background:#0d1117;
 }
 
-.projects-container{
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading span{
+    color:#8B5CF6;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:3px;
+}
+
+.section-heading h2{
+    color:#fff;
+    font-size:48px;
+    margin-top:10px;
+}
+.project-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
     gap:35px;
-    margin-top:60px;
 }
-
 .project-card{
-    background:#171b24;
+    background:#161b22;
+    border:1px solid rgba(255,255,255,.08);
     border-radius:20px;
     overflow:hidden;
-    border:1px solid rgba(255,255,255,.08);
-    transition:.35s;
+    transition:.4s;
 }
 
 .project-card:hover{
     transform:translateY(-10px);
     border-color:#8B5CF6;
+    box-shadow:0 20px 45px rgba(139,92,246,.25);
 }
-
-.project-image{
-    height:220px;
-    overflow:hidden;
-}
-
-.project-image img{
+.project-card img{
     width:100%;
-    height:100%;
+    height:220px;
     object-fit:cover;
-    transition:.4s;
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
-
-.project-card:hover img{
-    transform:scale(1.05);
-}
-
 .project-content{
     padding:28px;
 }
 
 .project-content h3{
-    font-size:28px;
+    color:#fff;
+    font-size:26px;
     margin-bottom:15px;
 }
 
 .project-content p{
-    color:#9CA3AF;
+    color:#b5b5b5;
     line-height:1.8;
+    margin-bottom:22px;
+    font-size:16px;
 }
-
-.tech{
+.tech-stack{
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-    margin:25px 0;
+    margin-bottom:25px;
 }
 
-.tech span{
-    background:#8B5CF6;
-    color:#fff;
+.tech-stack span{
+    background:rgba(139,92,246,.15);
+    color:#C084FC;
     padding:8px 16px;
-    border-radius:25px;
-    font-size:13px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:600;
+    border:1px solid rgba(139,92,246,.3);
 }
-
-.project-buttons{
+.project-links{
     display:flex;
     gap:15px;
+}
+
+.project-links a{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.project-links a:first-child{
+    background:#8B5CF6;
+    color:#fff;
+}
+
+.project-links a:first-child:hover{
+    background:#9d6cff;
+    transform:translateY(-3px);
+}
+
+.project-links a:last-child{
+    border:2px solid #8B5CF6;
+    color:#fff;
+}
+
+.project-links a:last-child:hover{
+    background:#8B5CF6;
+    transform:translateY(-3px);
+}
+
+@media(max-width:900px){
+
+.project-grid{
+    grid-template-columns:1fr;
+}
+
+.section-heading h2{
+    font-size:38px;
+}
+
+}
+
+@media(max-width:600px){
+
+.projects{
+    padding:80px 6%;
+}
+
+.project-content{
+    padding:22px;
+}
+
+.project-content h3{
+    font-size:22px;
+}
+
+.project-card img{
+    height:190px;
+}
+
+.project-links{
+    flex-direction:column;
+}
+
+}
+.project-card{
+
+    overflow:hidden;
+
+}
+
+.project-card img{
+
+    transition:.45s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.05);
+
+}
+.project-card:hover{
+
+    transform:translateY(-12px);
+
 }

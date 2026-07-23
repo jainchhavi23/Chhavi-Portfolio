@@ -1,29 +1,39 @@
-// Mobile Navbar
+// ===============================
+// Mobile Menu
+// ===============================
 
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
-if(menuBtn){
+menuBtn.addEventListener("click", () => {
 
-    menuBtn.addEventListener("click",()=>{
-
-        navLinks.classList.toggle("active");
-
-    });
-
-}
-
-// Sticky Navbar
-
-window.addEventListener("scroll",()=>{
-
-    const navbar=document.querySelector("nav");
-
-    navbar.classList.toggle("sticky",window.scrollY>80);
+    navLinks.classList.toggle("active");
 
 });
 
+// ===============================
+// Sticky Navbar
+// ===============================
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 50){
+
+        navbar.classList.add("sticky");
+
+    }else{
+
+        navbar.classList.remove("sticky");
+
+    }
+
+});
+
+// ===============================
 // Smooth Scroll
+// ===============================
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
@@ -37,11 +47,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
         });
 
+        navLinks.classList.remove("active");
+
     });
 
 });
 
-// Active Navigation
+// ===============================
+// Active Link
+// ===============================
 
 const sections=document.querySelectorAll("section");
 const navItems=document.querySelectorAll(".nav-links a");
@@ -54,7 +68,7 @@ window.addEventListener("scroll",()=>{
 
         const sectionTop=section.offsetTop-120;
 
-        if(scrollY>=sectionTop){
+        if(window.scrollY>=sectionTop){
 
             current=section.getAttribute("id");
 
